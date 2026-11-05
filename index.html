@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <!-- Tailwind CSS for rapid styling -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
     <!-- Navigation -->
@@ -16,12 +18,41 @@
                 <div class="flex items-center">
                     <span class="text-2xl font-bold text-white tracking-wide">Better Life</span>
                 </div>
+                <!-- Desktop Menu (Hidden on mobile) -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="index.html" class="text-white font-semibold border-b-2 border-amber-700 pb-1">Home</a>
                     <a href="index1.html" class="text-white hover:text-amber-700 transition">Home2</a>
                     <a href="index2.html" class="text-white hover:text-amber-700 transition">Home3</a>
                     <a href="contact.html" class="text-white hover:text-amber-700 transition">Contact Us</a>
                 </div>
+                <!-- Hamburger Button (Visible ONLY on mobile) -->
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-btn" class="text-white hover:opacity-75 focus:outline-none">
+                        <!-- SVG icon for the 3 lines -->
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Dropdown Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute w-full bg-gradient-to-r from-[#ffcc00] to-[#896600] shadow-lg border-t border-[#260709]/20 left-0">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <!-- Active Mobile Link (styled slightly differently) -->
+                <a href="index.html"
+                    class="block px-3 py-2 rounded-md font-semibold text-[#260709] bg-white/20">Home</a>
+                <!-- Inactive Mobile Links -->
+                <a href="index1.html"
+                    class="block px-3 py-2 rounded-md font-medium text-[#260709] hover:bg-white/10 transition">Home2</a>
+                <a href="index2.html"
+                    class="block px-3 py-2 rounded-md font-medium text-[#260709] hover:bg-white/10 transition">Home3</a>
+                <a href="contact.html"
+                    class="block px-3 py-2 rounded-md font-medium text-[#260709] hover:bg-white/10 transition">Contact
+                    Us</a>
             </div>
         </div>
     </nav>
@@ -38,7 +69,8 @@
                 A trusted sanctuary for healing and emotional wellness located in Ettumanoor, Kottayam.
             </p>
             <div>
-                <a href="contact.html" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded shadow-lg transition duration-300">
+                <a href="contact.html"
+                    class="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded shadow-lg transition duration-300">
                     Schedule an Appointment
                 </a>
             </div>
@@ -50,10 +82,14 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 class="text-3xl font-bold text-gray-900 mb-6">Your Safe Space for Personal Growth</h2>
             <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                Led by an experienced Consultant Psychologist and Psychotherapist holding MSW, M.Sc. Psychology, and M.Sc. Counselling & Psychotherapy degrees. Our practice provides a safe, confidential, and evidence-based space for personal growth and mental well-being.
+                Led by an experienced Consultant Psychologist and Psychotherapist holding MSW, M.Sc. Psychology, and
+                M.Sc. Counselling & Psychotherapy degrees. Our practice provides a safe, confidential, and
+                evidence-based space for personal growth and mental well-being.
             </p>
             <p class="text-lg text-gray-600 leading-relaxed">
-                Whether you are seeking support for personal emotional struggles, navigating complex family dynamics, or looking to unlock your highest potential right here in Kerala, Better Life is here to walk with you in every step of the way.
+                Whether you are seeking support for personal emotional struggles, navigating complex family dynamics, or
+                looking to unlock your highest potential right here in Kerala, Better Life is here to walk with you in
+                every step of the way.
             </p>
         </div>
     </section>
@@ -63,38 +99,44 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-gray-900">Why Choose Better Life in Ettumanoor?</h2>
-                <p class="mt-4 text-gray-600">Finding the right mental health professional is the first and most crucial step toward healing.</p>
+                <p class="mt-4 text-gray-600">Finding the right mental health professional is the first and most crucial
+                    step toward healing.</p>
             </div>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Feature 1 -->
                 <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
                     <h3 class="text-xl font-bold text-amber-700 mb-3">Triple Master’s Qualified Expertise</h3>
-                    <p class="text-gray-600">Grounded in rigorous academic training—holding advanced degrees in Social Work (MSW), Psychology, and Counselling & Psychotherapy.</p>
+                    <p class="text-gray-600">Grounded in rigorous academic training—holding advanced degrees in Social
+                        Work (MSW), Psychology, and Counselling & Psychotherapy.</p>
                 </div>
 
                 <!-- Feature 2 -->
                 <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
                     <h3 class="text-xl font-bold text-amber-700 mb-3">Conveniently Located</h3>
-                    <p class="text-gray-600">Easily accessible for clients looking for an in-person psychological clinic in Ettumanoor and the greater Kottayam region, alongside flexible online sessions.</p>
+                    <p class="text-gray-600">Easily accessible for clients looking for an in-person psychological clinic
+                        in Ettumanoor and the greater Kottayam region, alongside flexible online sessions.</p>
                 </div>
 
                 <!-- Feature 3 -->
                 <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
                     <h3 class="text-xl font-bold text-amber-700 mb-3">Holistic & Integrative Approach</h3>
-                    <p class="text-gray-600">Combining modern psychotherapy, hypnotherapy, and NLP to treat the mind, body, and emotions as a connected whole.</p>
+                    <p class="text-gray-600">Combining modern psychotherapy, hypnotherapy, and NLP to treat the mind,
+                        body, and emotions as a connected whole.</p>
                 </div>
 
                 <!-- Feature 4 -->
                 <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
                     <h3 class="text-xl font-bold text-amber-700 mb-3">Safe & Non-Judgmental Space</h3>
-                    <p class="text-gray-600">A strictly confidential environment where your privacy, dignity, and emotional safety are our highest priorities.</p>
+                    <p class="text-gray-600">A strictly confidential environment where your privacy, dignity, and
+                        emotional safety are our highest priorities.</p>
                 </div>
 
                 <!-- Feature 5 -->
                 <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100">
                     <h3 class="text-xl font-bold text-amber-700 mb-3">Personalized Treatment Plans</h3>
-                    <p class="text-gray-600">No two minds are alike. We design customized therapeutic pathways tailored specifically to your goals and life circumstances.</p>
+                    <p class="text-gray-600">No two minds are alike. We design customized therapeutic pathways tailored
+                        specifically to your goals and life circumstances.</p>
                 </div>
             </div>
         </div>
@@ -107,6 +149,15 @@
             <p class="mt-2 text-sm text-gray-300">Ettumanoor, Kottayam, Kerala</p>
         </div>
     </footer>
+    <!-- Script for mobile menu toggle -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
 
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
+
 </html>
