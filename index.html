@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Life | Consultant Psychologist in Ettumanoor</title>
+    <!-- Tailwind CSS for rapid styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'fade-in-up': 'fadeInUp 1s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': {opacity: '0', transform: 'translateY(20px)'},
+                            '100%': {opacity: '1', transform: 'translateY(0)'},
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-stone-800 font-['Poppins'] antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-[#ff7d2d] shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <img src="images/logo.png" alt="Better Life Logo" class="h-14 w-auto mr-3">
+                    <span
+                        class="text-4xl font-bold text-[#260709] tracking-wide italic font-['Playfair_Display']">Better
+                        Life</span>
+                </div>
+                <!-- Desktop Menu (Hidden on mobile) -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-[#260709] font-bold border-b-2 border-[#7A3E26] pb-1">Home</a>
+                    <a href="about.html" class="text-[#260709] hover:opacity-75 transition font-medium">About Us</a>
+                    <a href="services.html" class="text-[#260709] hover:opacity-75 transition font-medium">Services</a>
+                    <a href="contact.html" class="text-[#260709] hover:opacity-75 transition font-medium">Contact
+                        Us</a>
+                </div>
+                <!-- Hamburger Button (Visible ONLY on mobile) -->
+                <div class="flex items-center md:hidden">
+                    <button id="mobile-menu-btn" class="text-white hover:opacity-75 focus:outline-none">
+                        <!-- SVG icon for the 3 lines -->
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Dropdown Menu (Hidden by default) -->
+        <div id="mobile-menu"
+            class="hidden md:hidden absolute w-full bg-[#ff7d2d] shadow-lg border-t border-[#7A3E26]/20 left-0">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <!-- Active Mobile Link (styled slightly differently) -->
+                <a href="index.html"
+                    class="block px-3 py-2 rounded-md font-semibold text-[#260709] bg-white/20">Home</a>
+
+                <!-- Inactive Mobile Links -->
+                <a href="about.html"
+                    class="block px-3 py-2 rounded-md font-medium text-[#260709] hover:bg-white/10 transition">About
+                    Us</a>
+                <a href="services.html"
+                    class="block px-3 py-2 rounded-md font-medium text-[#260709] hover:bg-white/10 transition">Services</a>
+                <a href="contact.html"
+                    class="block px-3 py-2 rounded-md font-medium text-[#260709] hover:bg-white/10 transition">Contact
+                    Us</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section: Locked to your exact image resolutions -->
+
+    <header class="relative w-full h-[calc(100dvh-80px)] overflow-hidden bg-[#ff7d2d]">
+
+        <!-- The Picture Element -->
+        <picture class="w-full h-full block">
+            <!-- 1. Desktop: Screens 1024px and wider -->
+            <source media="(min-width: 1024px)" srcset="images/hero-desktop.png">
+
+            <!-- 2. Tablet: Screens between 768px and 1023px -->
+            <source media="(min-width: 768px)" srcset="images/hero-tablet.png">
+
+            <!-- 3. Mobile: Changed object-center to object-bottom -->
+            <img src="images/hero-mobile.png" alt="Better Life Clinic Hero"
+                class="h-full w-full object-cover object-bottom mx-auto" />
+        </picture>
+
+        <!-- Responsive Text Overlay -->
+        <div
+            class="absolute inset-0 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-end z-10 pointer-events-none">
+            <!-- Text Area -->
+            <div
+                class="w-full sm:w-[60%] md:w-[55%] lg:w-[60%] xl:w-[58%] flex flex-col items-end text-right animate-fade-in-up pointer-events-auto">
+
+                <!-- Heading -->
+                <h1
+                    class="hidden md:block whitespace-nowrap text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-extrabold mb-4 leading-tight text-white [-webkit-text-stroke:1px_#260709]">
+                    Welcome to
+                    <span class="italic font-['Playfair_Display'] text-[#260709]">
+                        Better Life
+                    </span>
+                </h1>
+
+                <!-- Paragraph -->
+                <p
+                    class="hidden md:block text-sm md:text-base lg:text-xl xl:text-2xl mb-4 lg:mb-8 font-light text-stone-900 drop-shadow-md">
+                    A trusted sanctuary for healing and emotional wellness <br class="hidden md:inline">
+                    located in Ettumanoor, Kottayam.
+                </p>
+
+                <!-- Appointment Button -->
+                <div>
+                    <a href="appointment.html"
+                        class="bg-[#260709] hover:bg-red-900 text-white font-semibold py-2 px-4 md:py-2 md:px-5 lg:py-3 lg:px-8 rounded-full shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-transparent text-xs md:text-sm lg:text-base">
+                        Schedule an Appointment
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Welcome / Intro Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-[#7A3E26] mb-6">Your Safe Space for Personal Growth</h2>
+            <p class="text-lg text-stone-800 leading-relaxed mb-6">
+                Led by an experienced Consultant Psychologist and Psychotherapist holding MSW, M.Sc. Psychology, and
+                M.Sc. Counselling & Psychotherapy degrees. Our practice provides a safe, confidential, and
+                evidence-based space for personal growth and mental well-being.
+            </p>
+            <p class="text-lg text-stone-800 leading-relaxed">
+                Whether you are seeking support for personal emotional struggles, navigating complex family dynamics, or
+                looking to unlock your highest potential right here in Kerala, Better Life is here to walk with you in
+                every step of the way.
+            </p>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-[#7A3E26]">Why Choose Better Life in Ettumanoor?</h2>
+                <p class="mt-4 text-stone-800">Finding the right mental health professional is the first and most
+                    crucial
+                    step toward healing.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div
+                    class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 transform transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+                    <h3 class="text-xl font-bold text-[#7A3E26] mb-3">Triple Master’s Qualified Expertise</h3>
+                    <p class="text-stone-800">Grounded in rigorous academic training—holding advanced degrees in Social
+                        Work (MSW), Psychology, and Counselling & Psychotherapy.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div
+                    class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 transform transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+                    <h3 class="text-xl font-bold text-[#7A3E26] mb-3">Conveniently Located</h3>
+                    <p class="text-stone-800">Easily accessible for clients looking for an in-person psychological
+                        clinic
+                        in Ettumanoor and the greater Kottayam region, alongside flexible online sessions.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div
+                    class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 transform transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+                    <h3 class="text-xl font-bold text-[#7A3E26] mb-3">Holistic & Integrative Approach</h3>
+                    <p class="text-stone-800">Combining modern psychotherapy, hypnotherapy, and NLP to treat the mind,
+                        body, and emotions as a connected whole.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div
+                    class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 transform transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+                    <h3 class="text-xl font-bold text-[#7A3E26] mb-3">Safe & Non-Judgmental Space</h3>
+                    <p class="text-stone-800">A strictly confidential environment where your privacy, dignity, and
+                        emotional safety are our highest priorities.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div
+                    class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 transform transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+                    <h3 class="text-xl font-bold text-[#7A3E26] mb-3">Personalized Treatment Plans</h3>
+                    <p class="text-stone-800">No two minds are alike. We design customized therapeutic pathways tailored
+                        specifically to your goals and life circumstances.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#ff7d2d] text-[#260709] py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="font-semibold">&copy; 2026 Better Life Consultant Psychologist & Psychotherapy Clinic. All rights
+                reserved.</p>
+            <p class="mt-2 text-sm ">Ettumanoor, Kottayam, Kerala</p>
+        </div>
+    </footer>
+    <!-- Script for mobile menu toggle -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
